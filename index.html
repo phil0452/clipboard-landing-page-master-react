@@ -10,7 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-react-clipboard-landing-page-app</title>
   </head>
-  <body>
+  <style>
+    .body_image {
+	font-family: var(--font-bai);
+	background-image: url('./src/assets/images/bg-header-mobile.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1100px) {
+	body {
+		font-family: var(--font-bai);
+		background-image: url('./src/assets/images/bg-header-desktop.png');
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+	}
+}
+  </style>
+  <body class="body_image">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
